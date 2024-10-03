@@ -55,8 +55,8 @@ footer {
 
 /* article */
 article{
-    margin: 15px;
-    padding: 15px ;
+    margin: 2%;
+    padding: 15px;
     padding-top: 0px;
     background-color: #fbfdfff8;
     border: 1px solid #add7ec;
@@ -104,22 +104,25 @@ nav a:hover {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 13px;
+    margin-left: 2%;
  }
 .footer-upper-social-links 
 {
     display: grid;
     grid-auto-flow: column;
-    gap: 5px;
+    gap: 1%;
 }
-.footer-upper-social-links a
+div.footer-upper-social-links a
 {
-    padding: 0px;
+    padding-top: 12px;
+    padding-left: 3px;
 }
 
 .footer-upper {
+    margin-left: 2%;
+    margin-right: 2%;
     flex-direction: row;
     padding: 72px 0 44px;    
-    /*height: 50%;*/
 }
 .footer-upper a {
     float: left;
