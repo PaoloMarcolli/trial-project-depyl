@@ -62,46 +62,51 @@ section ul  {
 /* Anchor rule */
 a {
     color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 
 /* Class footer rule */
-.footer-lower {
+/* Class footer-UPPER rule ( TODO ) */
+.footer-upper {
+    display: flex;
+    flex-direction:row;
+    justify-content: start;
     margin: 0px 2%;
+    padding: 45px 0px; 
+    font-size: 13px;
+}
+
+.footer-upper a {
+    padding: 10px 5px;    
+}
+.footer-upper .footer-upper-left {
+    display: none;
+    flex-direction: row;
+    justify-content: start;
+    width: 50%;
+}
+.footer-upper .footer-upper-right {
+     display: none;
+     flex-direction: row;
+     justify-content: end;
+     padding-top: 12px 3px;
+     width: 50%;
+}
+
+/* Class footer-lower rule */
+.footer-lower {
     display: flex;
     flex-direction: row;
-    clear: both;
+    margin: 2% 2%;
 }
 .footer-lower a {
     color: rgb(163, 161, 161);    
     text-decoration: none;
     font-size: 13px;
 }
-.footer-upper-social-links {
-     display: none;
-     grid-auto-flow: column;
-     gap: 1%;
-}
-.footer-upper {
-    display: flex;
-    flex-direction: row;
-    margin: 0%  2%;
-    padding: 72px 0px 44px; 
-    clear: both;   
-}
-.footer-upper a {
-float: left;
-display: block;
-color: #000000;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 13px;
-}
-div.footer-upper-social-links a{
-    padding-top: 12px;
-    padding-left: 3px;
-}
+
 
 /* Class responsive-navbar rule */
 .responsive-navbar{
@@ -179,7 +184,7 @@ div.footer-upper-social-links a{
     top: 0px;
 }
 
-/* Media queries rule */
+/* Media queries rule for PC */
 @media (min-width: 48em){ 
     .responsive-navbar li{
         float: left;
@@ -195,19 +200,45 @@ div.footer-upper-social-links a{
     .responsive-navbar .menu-icon{
         display: none;
     }
-    /* Body block  */
-    body
-    {
+    /* Body block */
+    body{
         height: calc(100% + 20%);    
-    }    
+    }   
+    /* Main block */ 
     main {
         margin-left:15%;
         margin-right:15%;
         min-height: calc(100% + 20%);
-      }
+    }
+    /* Footer block */
     footer {
         margin-left:15%;
         margin-right:15%;
-        height: 20%; /* Used in this example to enable scrolling */
+        height: 20%; 
     }    
+    /* Class footer-upper */
+    .footer-upper {
+        display: flex;
+        flex-direction:row;
+        justify-content: start;
+        margin: 0px 2%;
+        padding: 45px 0px; 
+        font-size: 13px;
+    }
+    .footer-upper a {
+        padding: 10px 5px;    
+    }
+    .footer-upper .footer-upper-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: 50%;
+    }
+    .footer-upper .footer-upper-right {
+         display: flex;
+         flex-direction: row;
+         justify-content: end;
+         padding-top: 12px 3px;
+         width: 50%;
+    } 
 }
