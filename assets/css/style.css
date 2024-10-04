@@ -28,6 +28,61 @@ main {
     min-height: calc(100% + 15%);
   }
 
+/* article */
+article{
+    margin: 2%;
+    padding: 15px;
+    padding-top: 0px;
+    background-color: #fbfdfff8;
+    border: 1px solid #add7ec;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);    
+}
+
+ /* footer */
+footer {
+    margin-top: 0px;
+    height: 15%; /* Used in this example to enable scrolling */
+    background-color: white;  
+    width: calc(100% - margin-left-margin-right); 
+    margin-left:5%;
+    margin-right:5%;
+    display: block;
+}
+
+/* Nav bar stylesheet block         */
+nav {
+    margin-left: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #156faa;
+    border-color:  #156faa;
+}
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding:  14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+ }
+nav a:hover {
+    background: #60afd3;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+section ul  {
+    padding-left: 20px ;
+}
+/*----------------------------------*/
+
 /* header */
 /*header {
     display: flex;
@@ -45,9 +100,7 @@ main {
 
 }*/
 
-a {
-    color: rgb(0, 0, 0);
-}
+
 
 .header{
     background-color:white;
@@ -148,76 +201,6 @@ a {
     text-transform:uppercase;
 }
 
-@media (min-width: 48em){ 
-    .header li{
-        float: left;
-    }
-    .header li a{
-        padding: 20px 30px;
-    }
-    .header .menu{
-        clear: none;
-        float: right;
-        max-height: 240px;
-    }
-    .header .menu-icon{
-        display: none;
-    }
-    main {
-        margin-left:15%;
-        margin-right:15%;
-        min-height: calc(100% + 15%);
-      }
-}
-
-/* footer */
-footer {
-    margin-top: 0px;
-    height: 15%; /* Used in this example to enable scrolling */
-    background-color: white;  
-    width: calc(100% - margin-left-margin-right); 
-    margin-left:15%;
-    margin-right:15%;
-    display: block;
-}
-
-/* article */
-article{
-    margin: 2%;
-    padding: 15px;
-    padding-top: 0px;
-    background-color: #fbfdfff8;
-    border: 1px solid #add7ec;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);    
-}
-/*----------------------------------*/
-
-/* Nav bar stylesheet block         */
-nav {
-    margin-left: 50px;
-    height: 50px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #156faa;
-    border-color:  #156faa;
-}
-nav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding:  14px 16px;
-    text-decoration: none;
-    font-size: 17px;
- }
-nav a:hover {
-    background: #60afd3;
-}
-/*----------------------------------*/
-
 /* Footer stylesheet sub-block      */
 .footer-lower {
     flex-direction: row;
@@ -245,7 +228,6 @@ div.footer-upper-social-links a
     padding-top: 12px;
     padding-left: 3px;
 }
-
 .footer-upper {
     margin-left: 2%;
     margin-right: 2%;
@@ -261,4 +243,27 @@ div.footer-upper-social-links a
     text-decoration: none;
     font-size: 13px;
  }
+ 
 /*----------------------------------*/
+
+@media (min-width: 48em){ 
+    .header li{
+        float: left;
+    }
+    .header li a{
+        padding: 20px 30px;
+    }
+    .header .menu{
+        clear: none;
+        float: right;
+        max-height: 240px;
+    }
+    .header .menu-icon{
+        display: none;
+    }
+    main {
+        margin-left:15%;
+        margin-right:15%;
+        min-height: calc(100% + 15%);
+      }
+}
