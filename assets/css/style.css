@@ -77,15 +77,15 @@ a {
     text-decoration: none;
     font-size: 13px;
 }
- .footer-upper-social-links {
-     display: grid;
+.footer-upper-social-links {
+     display: none;
      grid-auto-flow: column;
      gap: 1%;
 }
- .footer-upper {
+.footer-upper {
     display: flex;
     flex-direction: row;
-    margin: 0% , 2%;
+    margin: 0%  2%;
     padding: 72px 0px 44px; 
     clear: both;   
 }
