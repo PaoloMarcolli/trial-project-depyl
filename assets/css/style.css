@@ -158,6 +158,7 @@ a {
     .header .menu{
         clear: none;
         float: right;
+        max-height: 240px;
     }
     .header .menu-icon{
         display: none;
