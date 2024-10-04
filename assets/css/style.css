@@ -1,4 +1,12 @@
 /* Main stylesheet semantic block    */
+
+/* Header block */
+header > img.logo{
+    float: left;
+    padding: 1px 1%;  
+}
+
+/* Body block */
 body
 {
     margin: 0;
@@ -14,11 +22,8 @@ body
     background-size: cover;
     height: calc(100% + 15%);    
 }
-/*----------------------------------*/
 
-/* Main stylesheet block main,footer */
-
-/* main */
+/* Main block */
 main {
     padding: 16px;
     margin-left:5%;
@@ -28,7 +33,7 @@ main {
     min-height: calc(100% + 15%);
   }
 
-/* article */
+/* Article block */
 article{
     margin: 2%;
     padding: 15px;
@@ -39,7 +44,7 @@ article{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);    
 }
 
- /* footer */
+ /* Footer block */
 footer {
     margin-top: 0px;
     height: 15%; /* Used in this example to enable scrolling */
@@ -50,7 +55,7 @@ footer {
     display: block;
 }
 
-/* Nav bar stylesheet block         */
+/* Nav block         */
 nav {
     margin-left: 50px;
     height: 50px;
@@ -102,6 +107,7 @@ section ul  {
 
 
 
+
 .header{
     background-color:white;
     box-shadow: 1px 1px 4px 0 rgb(184, 181, 181);
@@ -127,12 +133,6 @@ section ul  {
 
 .header ul a:hover{
     background-color: rgba(218, 214, 214, 0.904);
-}
-
-.header .logo{
-    float: left;
-    padding: 0px 20px;
-    font-size: 20px;    
 }
 
 .header .menu{
@@ -193,12 +193,6 @@ section ul  {
 .header .menu-btn:checked ~ .menu-icon .nav-icon::after{   
     transform: rotate(45deg);
     top: 0px;
-}
-
-.logo{
-    color: white;
-    text-decoration: none;
-    text-transform:uppercase;
 }
 
 /* Footer stylesheet sub-block      */
@@ -269,6 +263,5 @@ div.footer-upper-social-links a
       footer {
         margin-left:15%;
         margin-right:15%;
-    }
-    
+    }    
 }
