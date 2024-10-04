@@ -1,15 +1,10 @@
-/* Main stylesheet semantic block    */
-
-/* Header block */
-
+/* Header rule ( semantic block for SEO ) */
 header > img.logo{
     float: left;
     padding: 1px 0px;  
 }
-
-/* Body block  */
-body
-{
+/* Body rule ( semantic block for SEO ) */
+body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color:white;
@@ -22,27 +17,25 @@ body
     background-size: cover;
     height: calc(100% + 15%);    
 }
-
-/* Main block */
+/* Main rule ( semantic block for SEO ) */
 main {
     padding: 16px;
-    margin:0px 5%;
+    margin:0px 1%;
     background-color: white;   
     width: calc(100% - margin-left-margin-right);
     min-height: calc(100% + 15%);   
-  }
-  
-/* Article block */
+} 
+/* Article rule ( semantic block for SEO ) */
 article{
     margin: 2%;
-    padding: 0px 15px 15px;
+    padding: 0px 15px ;
     background-color: #fbfdfff8;
     border: 1px solid #add7ec;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);    
     scroll-margin-top: 75px;
 }
-
+/* Tips for align first article ( semantic block for SEO ) */
 article.empty{
     margin: 2%;
     padding: 0px 15px 15px;
@@ -53,94 +46,100 @@ article.empty{
     scroll-margin-top: 75px;
     height: 25px;
 }
-
- /* Footer block */
+/* Footer rule ( semantic block for SEO ) */
 footer {
-    margin-top: 0px;
+    margin: 0px 1%;
+    padding: 0px 15px 15px 15px;
     height: 15%; /* Used in this example to enable scrolling */
     background-color: white;  
     width: calc(100% - margin-left-margin-right); 
-    margin-left:5%;
-    margin-right:5%;
-    display: block;
+}
+/* Section rule ( semantic block for SEO ) */
+section ul  {
+    padding-left: 20px ;
 }
 
-/* Nav block         */
-nav {
-    margin-left: 50px;
-    height: 50px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #156faa;
-    border-color:  #156faa;
-}
-nav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding:  14px 16px;
-    text-decoration: none;
-    font-size: 17px;
- }
-nav a:hover {
-    background: #60afd3;
-}
-
+/* Anchor rule */
 a {
     color: rgb(0, 0, 0);
 }
 
-section ul  {
-    padding-left: 20px ;
+
+/* Class footer rule */
+.footer-lower {
+    margin: 0px 2%;
+    display: flex;
+    flex-direction: row;
+    clear: both;
 }
-/*----------------------------------*/
+.footer-lower a {
+    color: rgb(163, 161, 161);    
+    text-decoration: none;
+    font-size: 13px;
+}
+ .footer-upper-social-links {
+     display: grid;
+     grid-auto-flow: column;
+     gap: 1%;
+}
+ .footer-upper {
+    display: flex;
+    flex-direction: row;
+    margin: 0% , 2%;
+    padding: 72px 0px 44px; 
+    clear: both;   
+}
+.footer-upper a {
+float: left;
+display: block;
+color: #000000;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 13px;
+}
+div.footer-upper-social-links a{
+    padding-top: 12px;
+    padding-left: 3px;
+}
 
-
-.header{
+/* Class responsive-navbar rule */
+.responsive-navbar{
     background-color:white;
     box-shadow: 1px 1px 4px 0 rgb(184, 181, 181);
     position: fixed;    
     width: 100%;
     z-index: 1;
 }
-
-.header ul{
+.responsive-navbar ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
     overflow: hidden;
     background-color:white;
 }
-
-.header ul a{
+.responsive-navbar ul a{
     display: block;
     /*border-right: 1px solid red;*/
     padding: 20px 20px;
     text-decoration: none;
 }
-
-.header ul a:hover{
+.responsive-navbar ul a:hover{
     background-color: rgba(218, 214, 214, 0.904);
 }
-
-.header .menu{
+.responsive-navbar .menu{
     clear: both;
     max-height: 0;
     transition: max-height 1.2s ease-out
 }
-
-.header .menu-icon{
+.responsive-navbar .menu-icon{
     /*border: 1px solid red;*/
     padding: 28px 20px;
     position: relative;
     float: right;
     cursor: pointer;
 }
-
-.header .menu-icon .nav-icon{
+.responsive-navbar .menu-icon .nav-icon{
     background-color: black;
     display: block;
     width: 18px;
@@ -148,9 +147,8 @@ section ul  {
     position: relative;
     transition: background-color .2s ease-out;
 }
-
-.header .menu-icon .nav-icon:before,
-.header .menu-icon .nav-icon:after{
+.responsive-navbar .menu-icon .nav-icon:before,
+.responsive-navbar .menu-icon .nav-icon:after{
     background-color: black;
     display: block;
     width: 100%;
@@ -160,92 +158,41 @@ section ul  {
     transition: all 1.2s ease-out;
     top: 5px;
 }   
-
-.header .menu-icon .nav-icon:before{
+.responsive-navbar .menu-icon .nav-icon:before{
     top: -5px;
 }
-
-.header .menu-btn{
+.responsive-navbar .menu-btn{
     display: none;
 }
-
-.header .menu-btn:checked ~ .menu{
+.responsive-navbar .menu-btn:checked ~ .menu{
     max-height: 240px;   
 }
-
-.header .menu-btn:checked ~ .menu-icon .nav-icon{   
+.responsive-navbar .menu-btn:checked ~ .menu-icon .nav-icon{   
     background-color: transparent;
 }
-.header .menu-btn:checked ~ .menu-icon .nav-icon::before{   
+.responsive-navbar .menu-btn:checked ~ .menu-icon .nav-icon::before{   
     transform: rotate(-45deg);
     top: 0px;
 }
-
-.header .menu-btn:checked ~ .menu-icon .nav-icon::after{   
+.responsive-navbar .menu-btn:checked ~ .menu-icon .nav-icon::after{   
     transform: rotate(45deg);
     top: 0px;
 }
 
-/* Footer stylesheet sub-block      */
-.footer-lower {
-    flex-direction: row;
-    padding: 44px 0;
-    background-color: white;
-}
-.footer-lower a {
-    float: left;
-    align-content: end;
-    display: block;
-    color: #807a7a;    
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 13px;
-    margin-left: 2%;
- }
-.footer-upper-social-links 
-{
-    display: grid;
-    grid-auto-flow: column;
-    gap: 1%;
-}
-div.footer-upper-social-links a
-{
-    padding-top: 12px;
-    padding-left: 3px;
-}
-.footer-upper {
-    margin-left: 2%;
-    margin-right: 2%;
-    flex-direction: row;
-    padding: 72px 0 44px;    
-    background-color: white;
-}
-.footer-upper a {
-    float: left;
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 13px;
- }
- 
-/*----------------------------------*/
-
+/* Media queries rule */
 @media (min-width: 48em){ 
-    .header li{
+    .responsive-navbar li{
         float: left;
     }
-    .header li a{
+    .responsive-navbar li a{
         padding: 20px 30px;
     }
-    .header .menu{
+    .responsive-navbar .menu{
         clear: none;
         float: right;
         max-height: 240px;
     }
-    .header .menu-icon{
+    .responsive-navbar .menu-icon{
         display: none;
     }
     /* Body block  */
