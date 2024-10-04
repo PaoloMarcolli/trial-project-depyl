@@ -3,7 +3,7 @@
 /* Header block */
 header > img.logo{
     float: left;
-    padding: 1px 1%;  
+    padding: 1px 0px;  
 }
 
 /* Body block */
