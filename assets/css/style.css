@@ -66,47 +66,70 @@ a {
     text-decoration: none;
 }
 
-
 /* Class footer rule */
-/* Class footer-UPPER rule ( TODO ) */
-.footer-upper {
+.footer-flex {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-flex-upper {
+    display: none;
     flex-direction:row;
     justify-content: start;
     margin: 0px 2%;
     padding: 45px 0px; 
     font-size: 13px;
 }
-
-.footer-upper a {
+.footer-flex-upper a {
     padding: 10px 5px;    
 }
-.footer-upper .footer-upper-left {
+.footer-flex-upper .footer-flex-upper-left {
     display: none;
     flex-direction: row;
     justify-content: start;
     width: 50%;
+    padding-top: 2px -4px;
 }
-.footer-upper .footer-upper-right {
+.footer-flex-upper .footer-flex-upper-right {
      display: none;
      flex-direction: row;
      justify-content: end;
-     padding-top: 12px 3px;
      width: 50%;
 }
 
-/* Class footer-lower rule */
-.footer-lower {
+/* Show link social media on the center in second row of flexbox only for device <1125 */
+.footer-flex .footer-flex-upper-1225 {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin: 0px 2%;
+    padding: 12px 0px 5%;
+    font-size: 13px;
+}
+.footer-flex .footer-flex-center-1225 {
     display: flex;
     flex-direction: row;
+    justify-content:center;
+    padding: 12px 0px 5%
+}
+/* Multiple class rule application */
+.footer-flex-upper-1225 a, .footer-flex-center-1225 a {
+    padding: 0px 8px;    
+}
+/* Class footer-UPPER rule ( TODO ) */
+
+/* Class footer-lower rule */
+.footer-flex-lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: 2% 2%;
 }
-.footer-lower a {
+.footer-flex-lower a {
     color: rgb(163, 161, 161);    
     text-decoration: none;
     font-size: 13px;
 }
-
 
 /* Class responsive-navbar rule */
 .responsive-navbar{
@@ -184,8 +207,8 @@ a {
     top: 0px;
 }
 
-/* Media queries rule for PC */
-@media (min-width: 48em){ 
+/* Media queries rule for device > 1225 */
+@media (min-width: 1225px){ 
     .responsive-navbar li{
         float: left;
     }
@@ -217,7 +240,7 @@ a {
         height: 20%; 
     }    
     /* Class footer-upper */
-    .footer-upper {
+    .footer-flex-upper {
         display: flex;
         flex-direction:row;
         justify-content: start;
@@ -225,20 +248,29 @@ a {
         padding: 45px 0px; 
         font-size: 13px;
     }
-    .footer-upper a {
+    .footer-flex-upper a {
         padding: 10px 5px;    
     }
-    .footer-upper .footer-upper-left {
+    .footer-flex-upper .footer-flex-upper-left {
         display: flex;
         flex-direction: row;
         justify-content: start;
         width: 50%;
     }
-    .footer-upper .footer-upper-right {
+    .footer-flex-upper .footer-flex-upper-right {
          display: flex;
          flex-direction: row;
          justify-content: end;
          padding-top: 12px 3px;
          width: 50%;
     } 
+    .footer-flex .footer-flex-upper-1225 {
+        display: none;
+    } 
+    .footer-flex .footer-flex-center-1225 {
+        display: none;
+    } 
+    .footer-flex-lower {
+        justify-content: start;
+    }
 }
